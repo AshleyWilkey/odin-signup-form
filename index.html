@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <title>Odin-signup-form</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="left">
+        <div id="logo">
+          <img src="img/odin-lined.png" alt="odin" />
+          <h1>Odin</h1>
+        </div>
+      </div>
+
+      <div id="right">
+        <p>
+          This is not a real online service! You do need something like this in
+          your life to help your deepest dreams.
+        </p>
+        <br />
+        <p>Sign Up <em>Now</em> to get started!</p>
+        <form class="form" id="signup">
+          <div class="form-row">
+            <label>
+              First Name
+              <input type="text" />
+            </label>
+            <label>
+              Last Name
+              <input type="text" />
+            </label>
+          </div>
+          <div class="form-row">
+            <label for="email">
+              Email
+              <input type="email" name="email" />
+            </label>
+            <label for="phone">
+              Phone Number
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              />
+            </label>
+          </div>
+          <div class="form-row">
+            <label for="pwd">
+              Password
+              <input type="password" id="pwd" name="pwd" />
+            </label>
+            <label for="cfm-pwd">
+              Confirm Password
+              <input type="password" id="cfm-pwd" name="cfm-pwd" />
+            </label>
+          </div>
+          <input type="submit" class="submit" value="Create Account" />
+          <p>Already have a account? <a href="#login">Log in</a></p>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
